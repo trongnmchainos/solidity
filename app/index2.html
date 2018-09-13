@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Decentralized Voting App</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div class="row" style="background: darkslategray;height: 50px;padding-top: 15px;color: white;">
+        <div class="col-md-1">Wallets</div>
+        <div class="col-md-1">Transactions</div>
+        <div class="col-md-1">Settings</div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1">Account</div>
+        <div class="col-md-1">Balance:100ETH</div>
+        <div class="col-md-1">Rinkeby</div>
+        <div class="col-md-1">Online</div>
+    </div>
+    <table class="table">
+        <tr class="active" style="height: 70px;">
+            <td></td>
+            <th>
+                <h3>Wallets</h3>
+            </th>
+            <td></td>
+            <!-- <td></td>
+            <td></td> -->
+
+            <!-- <td><button type="submit" class="btn btn-primary">Add</button></td> -->
+        </tr>
+        <tr class="success">
+            <th>Name</th>
+            <th>Address</th>
+            <th>Balance</th>
+            
+            <!-- <th>Daily limit</th>
+            <th>Limit for today</th> -->
+        </tr>
+        <tr class="success">
+            <td id="names">Smart contract chainos</td>
+            <td id="address"></td>
+            <td id="balance"></td>
+            
+            <!-- <td>Daily limit</td>
+                <td>Limit for today</td> -->
+        </tr>
+        <tr class="success">
+            <td><input type="text" placeholder="coin" id="coin" />
+                <input type="text" placeholder="address phu" id="address_phu" /></td>
+            <td><input type="text" placeholder="data" id="data" />
+                <input type="text" placeholder="coin phu" id="coin_phu" /></td>
+            <td><input type="text" placeholder="address" id="to_address"/>
+                <input type="hidden" id="index" />
+                <input type="text" placeholder="account" id="account"/>
+               
+               
+            </td>
+            
+        </tr>
+        <tr class="success">
+            <td><a href="#" onclick="App.Send(); return false;" class="btn btn-primary">Send</a></td>
+            <td><a href="#" onclick="App.Add(); return false;" class="btn btn-primary">Send</a></td>
+            <td id="address1"></td>
+            <td id="balance1"></td>
+        </tr>
+        <div id="buy-msg"></div>
+    </table>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app1.js"></script>
+
+</html>
